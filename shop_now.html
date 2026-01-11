@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop Now | Ella Women's Wear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #fdf6f9;
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        nav h1 {
+            color: #e75480;
+            font-weight: 600;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+        }
+
+        nav ul li a:hover {
+            color: #e75480;
+        }
+
+        /* Page Header */
+        .page-header {
+            text-align: center;
+            padding: 50px 20px 30px;
+        }
+
+        .page-header h2 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            color: #777;
+        }
+
+        /* Filter Bar (visual only) */
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .filters button {
+            padding: 8px 18px;
+            border-radius: 20px;
+            border: 1px solid #e75480;
+            background: transparent;
+            color: #e75480;
+            cursor: pointer;
+        }
+
+        .filters button:hover {
+            background: #e75480;
+            color: white;
+        }
+
+        /* Products */
+        .products {
+            padding: 0 60px 60px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 18px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 330px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 17px;
+            margin-bottom: 6px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 8px;
+        }
+
+        .price {
+            font-weight: 600;
+            color: #e75480;
+            margin-bottom: 12px;
+        }
+
+        .card button {
+            padding: 10px 24px;
+            border-radius: 20px;
+            border: none;
+            background: #e75480;
+            color: white;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background: #d9436f;
+        }
+
+        /* Footer */
+        footer {
+            background: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h1>Ella Women's Wear</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="shop.html">Shop Now</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="page-header">
+    <h2>Shop Women's Dresses</h2>
+	<h3>New Arrivals</h3>
+    <p>Browse all styles designed for modern women</p>
+</section>
+
+<div class="filters">
+    <button>All</button>
+    <button>Casual</button>
+    <button>Party</button>
+    <button>Summer</button>
+    <button>Evening</button>
+</div>
+
+<section class="products">
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="https://assets.myntassets.com/w_360,q_50,,dpr_2,fl_progressive,f_webp/assets/images/2024/SEPTEMBER/6/pdPVBzqw_2d1a0e69f4ef452198276481b942ed31.jpg">
+            <h3>Floral Maxi Dress</h3>
+            <p>Fresh summer vibes</p>
+            <div class="price">$54</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://wonaconcept.com/upload/catalog/4200/4154/t_wona_concept_spring_drop_2522_1.webp">
+            <h3>Elegant Evening Dress</h3>
+            <p>Graceful silhouette</p>
+            <div class="price">$110</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956">
+            <h3>Party Wear Dress</h3>
+            <p>Bold & confident look</p>
+            <div class="price">$86</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/29951378/2024/6/12/e4aee740-b23b-499d-958a-692e1b51bc941718204163906AntheaaTieandDyePrintPuffSleeveCrepeA-LineMidiDress1.jpg">
+            <h3>Casual Midi Dress</h3>
+            <p>Comfort meets style</p>
+            <div class="price">$59</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.pexels.com/photos/16530583/pexels-photo-16530583.jpeg?cs=srgb&dl=pexels-soldiervip-16530583.jpg&fm=jpg">
+            <h3>Soft Pink Dress</h3>
+            <p>Minimal & elegant</p>
+            <div class="price">$63</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b">
+            <h3>Chic City Dress</h3>
+            <p>Modern fashion style</p>
+            <div class="price">$71</div>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Ella Women's Wear | Shop With Confidence
+</footer>
+
+</body>
+</html>

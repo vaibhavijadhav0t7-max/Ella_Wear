@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ella Women's Wear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+	
+	 <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #fdf6f9;
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        nav h1 {
+            color: #e75480;
+            font-weight: 600;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+        }
+
+        nav ul li a:hover {
+            color: #e75480;
+        }
+
+        /* Banner (no hero tag used) */
+        .banner {
+            height: 65vh;
+            background-image: url("https://images.unsplash.com/photo-1496747611176-843222e1e57c");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .banner::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(255, 230, 240, 0.8);
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .banner h2 {
+            font-size: 44px;
+            margin-bottom: 15px;
+        }
+
+        .banner p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        .banner button {
+            padding: 12px 30px;
+            background: #e75480;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .banner button:hover {
+            background: #d9436f;
+        }
+
+        /* Products */
+        .products {
+            padding: 60px;
+        }
+
+        .products h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 28px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 340px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        .card p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .price {
+            color: #e75480;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .card button {
+            padding: 10px 24px;
+            border-radius: 20px;
+            border: none;
+            background: #e75480;
+            color: white;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background: #d9436f;
+        }
+
+        /* Footer */
+        footer {
+            background: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h1>Ella Women's Wear</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="shop_now.html">New Arrivals</a></li>
+        <li><a href="contact.html">Contact</a></li>
+	 <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<section class="banner">
+    <div class="banner-content">
+        <h2>Exclusive Women's Dress Collection</h2>
+        <p>Designed for elegance, comfort, and confidence</p>
+        <button><a href="shop_now.html">Shop Women</a></button>
+    </div>
+</section>
+
+<section class="products">
+    <h2>Trending Women's Dresses</h2>
+
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="https://i.pinimg.com/564x/6f/22/e4/6f22e404111f00f1d300699abe84bdce.jpg" alt="Floral Dress">
+            <h3>Floral Summer Dress</h3>
+            <p>Light & breathable fabric</p>
+            <div class="price">$48</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://wonaconcept.com/upload/catalog/4200/4154/t_wona_concept_spring_drop_2522_1.webp" alt="Evening Dress">
+            <h3>Elegant Evening Dress</h3>
+            <p>Perfect for special occasions</p>
+            <div class="price">$95</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956" alt="Party Dress">
+            <h3>Party Wear Dress</h3>
+            <p>Bold & stylish look</p>
+            <div class="price">$78</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/29951378/2024/6/12/e4aee740-b23b-499d-958a-692e1b51bc941718204163906AntheaaTieandDyePrintPuffSleeveCrepeA-LineMidiDress1.jpg" alt="Casual Dress">
+            <h3>Casual Midi Dress</h3>
+            <p>Comfort for everyday wear</p>
+            <div class="price">$55</div>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Ella Women's Wear | All Rights Reserved
+</footer>
+
+</body>
+</html>
